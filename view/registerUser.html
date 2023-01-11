@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./bootstrap-5.2.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/settings.css">
+      <title>Barista - página de cadastro</title>
+   </head>
+   <body style="background-color: #F0E5CF;">
+      <div class="Form my-4 mx-5">
+         <div class="container py-5 px-5">
+            <div class="row gx-0" style="background-color: #F0ECE3; border-radius: 10px;box-shadow: 10px 10px 20px #DAB88B;">
+               <div class="col-lg-5">
+                  <img src="../assets/images/loginCoffee.jpg" width="500px" alt="form-img" style="border-radius: 10px 0px 0px 10px;">
+               </div>
+               <div class="col-lg-7 px-5 pt-5">
+                  <h1 style="font-family: blackout; font-size: 100px;" class="py-5 px-2">Barista</h1>
+                  <h4 class="py-3" style="font-size:20px">Cadastre logo sua conta Barista, é fácil!</h4>
+                  <form action="../controller/controllUser.php" method="post">
+                     <div class="form-row">
+                        <div class="col-lg-7">
+                           <input type="text" id="name" name="name" placeholder="Nome do usuário" class="form-control my-3 p-2" style="background-color: #F7F6F2">
+                        </div>
+                     </div>
+                     <div class="form-row">
+                        <div class="col-lg-7">
+                           <input type="password" id="password" name="password" placeholder="Senha do usuário" class="form-control my-3 p-2" style="background-color: #F7F6F2">
+                        </div>
+                     </div>
+                     <div class="form-row">
+                        <div class="col-lg-7">
+                           <button type="submit" name="option" value="register" class="btn1 mt-3 mb-5" style="border: none; outline: none; height: 40px; width: 100%; background-color: #A68DAD; border-radius: 10px; font-size: 1.2em;">Cadastrar</button>
+                        </div>
+                     </div>
+                     <p class="py-5 px-2" style="font-size:16px">Já tem uma conta ? <a href="./loginUser.html">Clique aqui!</a></p>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
